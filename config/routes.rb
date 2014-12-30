@@ -12,7 +12,9 @@ Rails.application.routes.draw do # the tutorial wants Blogger::Application.route
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # resource route (maps HTTP verbs to controller actions automatically):
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
   # Example resource route with options:
   #   resources :products do
