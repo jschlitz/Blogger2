@@ -16,6 +16,8 @@ Rails.application.routes.draw do # the tutorial wants Blogger::Application.route
     resources :comments
   end
 
+  resources :tags
+
   # Example resource route with options:
   #   resources :products do
   #     member do
